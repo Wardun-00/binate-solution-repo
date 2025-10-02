@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+     <link rel="shortcut icon" href="./assets/fav-removebg-preview.png" type="image/x-icon">
+    <!-- aos link -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- tailwind and dasyui cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -34,21 +39,21 @@
                     </ul>
                   </div>
                   <!-- Make sure you have this logo in your assets folder -->
-                  <a href="#"><img src="./assets/logo.svg" alt="logo" class="w-[100px] md:w-[130px]"></a>
+                  <a href="#"><img src="./assets/logo.svg" alt="logo" class="w-[100px] md:w-[130px]" data-aos="fade-right" data-aos-duration="1000"></a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1 space-x-2 text-base font-medium text-gray-600">
-                    <li><a href="">Home</a></li>
+                    <li data-aos="flip-left" data-aos-duration="1500"><a href="">Home</a></li>
                     <li><a href="">Service</a></li>
-                    <li><a href="">Case Studies</a></li>
+                    <li data-aos="flip-left" data-aos-duration="1500"><a href="">Case Studies</a></li>
                     <li><a href="">Industries</a></li>
-                    <li><a href="">About</a></li>
+                    <li data-aos="flip-left" data-aos-duration="1500"><a href="">About</a></li>
                     <li><a href="">Contact</a></li>
-                    <li><a href="">日本IT</a></li>
+                    <li data-aos="flip-left" data-aos-duration="1500"><a href="">日本IT</a></li>
                   </ul>
                 </div>
                 <div class="navbar-end">
-                  <a class="btn bg-[#ff8401] hover:bg-[#ff8401] rounded-full text-white font-semibold border-none px-6">Hire Developer</a>
+                  <a class="btn bg-[#ff8401] hover:bg-[#ff8401] rounded-full text-white font-semibold border-none px-6" >Hire Developer</a>
                 </div>
               </div>
             </nav>
@@ -85,9 +90,9 @@
                     </div>
 
                     <!-- right section -->
-                    <div class="lg:w-1/2">
+                    <div class="lg:w-1/2" data-aos="fade-down" data-aos-duration="1000">
                         <!-- Make sure you have this image in your assets folder -->
-                        <img src="./assets/hero-img.svg" alt="hero-img" class="w-full h-auto">
+                        <img src="./assets/hero-img.svg" alt="hero-img" class="w-full h-auto" >
                     </div>
                 </div>
             </section>
@@ -99,7 +104,7 @@
     
     <!-- Section Header -->
     <div class="text-center">
-      <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 tracking-tight">
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 tracking-tight" data-aos="fade-left" data-aos-duration="1000">
         Our Journey so Far
       </h2>
     </div>
@@ -161,7 +166,7 @@
                                     </svg>
                                 </span>
                             </div>
-                            <div>
+                            <div data-aos="fade-right" data-aos-duration="500">
                                 <h3 class="text-lg font-bold text-gray-800">Assign</h3>
                                 <p class="mt-1 text-gray-600">We have top-class developers to assist you in your product development.</p>
                             </div>
@@ -176,7 +181,7 @@
                                     </svg>
                                 </span>
                             </div>
-                            <div>
+                            <div data-aos="fade-right" data-aos-duration="1500">
                                 <h3 class="text-lg font-bold text-gray-800">Innovate</h3>
                                 <p class="mt-1 text-gray-600">We innovate generic software into personalized and interactive tools.</p>
                             </div>
@@ -191,7 +196,7 @@
                                     </svg>
                                 </span>
                             </div>
-                            <div>
+                            <div data-aos="fade-right" data-aos-duration="2500">
                                 <h3 class="text-lg font-bold text-gray-800">Transform</h3>
                                 <p class="mt-1 text-gray-600">Our team will support your operations to bring digital transformation and growth to your business.</p>
                             </div>
@@ -209,7 +214,7 @@
                 </div>
 
                 <!-- Right Image -->
-                <div class="flex items-center justify-center">
+                <div class="flex items-center justify-center" data-aos="flip-left" data-aos-duration="1F500">
                     <img class="w-full max-w-md lg:max-w-none h-auto rounded-lg" src="./assets/third-section.svg" alt="Team discussing digital products">
                 </div>
             </div>
@@ -233,7 +238,7 @@
             <div class="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
                 
                 <!-- Solution Card 1: Mobile App -->
-                <div class="flex flex-col bg-gray-50/70 rounded-xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300">
+                <div class="flex flex-col bg-gray-50/70 rounded-xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300" data-aos="fade-right" data-aos-duration="500">
                     <!-- Icon -->
                     <img class="h-14 w-14" src="./assets/m1.svg" alt="Mobile App Icon">
                     <!-- Content -->
@@ -249,7 +254,7 @@
                 </div>
 
                 <!-- Solution Card 2: Web App -->
-                <div class="flex flex-col bg-gray-50/70 rounded-xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300">
+                <div class="flex flex-col bg-gray-50/70 rounded-xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300" data-aos="fade-right" data-aos-duration="2000">
                     <!-- Icon -->
                     <img class="h-14 w-14" src="./assets/m2.svg" alt="Web App Icon">
                     <!-- Content -->
@@ -265,7 +270,7 @@
                 </div>
 
                 <!-- Solution Card 3: Dedicated Teams -->
-                <div class="flex flex-col bg-gray-50/70 rounded-xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300">
+                <div class="flex flex-col bg-gray-50/70 rounded-xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300" data-aos="fade-right" data-aos-duration="3000">
                     <!-- Icon -->
                     <img class="h-14 w-14" src="./assets/m3.svg" alt="Dedicated Teams Icon">
                     <!-- Content -->
@@ -291,7 +296,7 @@
   <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
     
     <!-- Top Green Banner -->
-    <div class="relative z-10 max-w-4xl mx-auto bg-[#34d399] rounded-2xl shadow-xl p-8 md:p-12 text-center md:-mb-24">
+    <div class="relative z-10 max-w-4xl mx-auto bg-[#34d399] rounded-2xl shadow-xl p-8 md:p-12 text-center md:-mb-24" data-aos="flip-left" data-aos-duration="1000">
       <h2 class="text-3xl md:text-4xl font-bold text-white">
         Recommended By 98% Of <br> Our Retained Clients
       </h2>
@@ -308,7 +313,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
         <!-- Left Image -->
-        <div class="flex justify-center">
+        <div class="flex justify-center" data-aos="fade-right" data-aos-duration="1000">
           <img src="./assets/last-image.svg" alt="Team at Binate" class="w-full max-w-lg h-auto">
         </div>
 
@@ -336,7 +341,7 @@
 
 
 <!-- Footer Section Start -->
-<footer class="bg-[#1C1C1C] text-gray-400 border-2 border-red-600">
+<footer class="bg-[#1C1C1C] text-gray-400 border-2">
   <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
     
     <!-- Footer Content Grid -->
@@ -419,7 +424,14 @@
 
         </main>
     </div>
+    <!-- aos js link -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+     <script>
+  AOS.init({
+    once: true
+  });
+</script>
 
     <!-- js link -->
      <script src="./script.js"></script>
