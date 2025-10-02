@@ -4,69 +4,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- tailwind and dasyui cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Binate</title>
 </head>
-<body>
-    <!-- header section -->
-    <header>
-      <!-- nav section -->
-        <nav>
-          <div class="navbar bg-gray-100 shadow-sm">
-  <div class="navbar-start">
-    <div class="dropdown">
-      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden bg-[#ff8401]">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+<body class="bg-white">
+    <!-- Wrapper for the curved background -->
+    <div class="relative">
+        <!-- header section -->
+        <header class="relative z-20">
+          <!-- nav section -->
+            <nav>
+              <div class="navbar bg-transparent max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a href="">Home</a></li>
+                      <li><a href="">Service</a></li>
+                      <li><a href="">Case Studies</a></li>
+                      <li><a href="">Industries</a></li>
+                      <li><a href="">About</a></li>
+                      <li><a href="">Contact</a></li>
+                      <li><a href="">日本IT</a></li>
+                    </ul>
+                  </div>
+                  <!-- Make sure you have this logo in your assets folder -->
+                  <a href="#"><img src="./assets/logo.svg" alt="logo" class="w-[100px] md:w-[130px]"></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 space-x-2 text-base font-medium text-gray-600">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">Case Studies</a></li>
+                    <li><a href="">Industries</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">日本IT</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn bg-[#ff8401] hover:bg-[#ff8401] rounded-full text-white font-semibold border-none px-6">Hire Developer</a>
+                </div>
+              </div>
+            </nav>
+        </header>
+
+        <!-- main section -->
+        <main>
+           <!-- hero section --> 
+            <section class="relative overflow-hidden pt-10 pb-24 md:pb-32">
+                <!-- Curved Background SVG -->
+                <div class="absolute inset-0 -z-10">
+                    <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 500" preserveAspectRatio="none">
+                        <path fill="#F9FAFB" d="M0,0H1440V350.2C1212.5,418.1,960,450,720,450S227.5,418.1,0,350.2V0Z"></path>
+                    </svg>
+                </div>
+                
+                <!-- Hero Content -->
+                <div class="relative z-10 max-w-screen-xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-12 px-4 sm:px-6 lg:px-8">
+                    <!-- left section -->
+                    <div class="lg:w-1/2 space-y-6 text-center lg:text-left">
+                        <h1 class="text-5xl lg:text-6xl font-extrabold leading-tight text-gray-800">
+                            Personalized <br> 
+                            <span class="text-[#34d399]">Software Solutions</span> <br> 
+                            For Your Business Growth
+                        </h1>
+                        
+                        <p class="text-gray-500 text-lg">We work as your tech partner so that you can scale up your business the fastest way.</p>
+                        
+                        <a class="btn bg-[#34d399] hover:bg-[#2cb984] rounded-full text-white font-semibold border-none px-6 h-auto py-3 inline-flex items-center gap-2 capitalize text-base">
+                            Hire Developer
+                            <!-- Arrow Icon SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </a>
+                    </div>
+
+                    <!-- right section -->
+                    <div class="lg:w-1/2">
+                        <!-- Make sure you have this image in your assets folder -->
+                        <img src="./assets/hero-img.svg" alt="hero-img" class="w-full h-auto">
+                    </div>
+                </div>
+            </section>
+
+            <!-- count sesction -->
+             <!-- Our Journey Section Start -->
+<section id="journey-section" class="bg-white py-16 sm:py-24">
+  <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Section Header -->
+    <div class="text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 tracking-tight">
+        Our Journey so Far
+      </h2>
+    </div>
+
+    <!-- Stats Grid -->
+    <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+      
+      <!-- Stat Card 1 -->
+      <div class="bg-gray-50 rounded-xl p-8 text-center shadow-sm border border-gray-100">
+        <p class="counter text-5xl font-bold text-[#F4674B]" data-target="8">0</p>
+        <p class="mt-2 text-base text-gray-600 font-medium">Years of Noticeable <br> Experience</p>
       </div>
-      <ul
-        tabindex="0"
-        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><a href="">Home</a></li>
-        <li><a href="">Service</a></li>
-        <li><a>About</a></li>
-      </ul>
-    </div>
-    <img src="./assets/logo.svg" alt="logo" class="w-[100px] md:w-[130px]">
-  </div>
-  <div class="navbar-center hidden lg:flex">
-    <ul class="menu menu-horizontal px-1">
-      <li><a href="">Home</a></li>
-     <li><a href="">Service</a></li>
-      <li><a href="">Case Studies</a></li>
-      <li><a href="">Industries</a></li>
-      <li><a href="">About</a></li>
-      <li><a href="">Contact</a></li>
-    </ul>
-  </div>
-  <div class="navbar-end">
-    <a class="btn bg-[#ff8401] rounded-full text-white">Hire Developer</a>
-  </div>
-</div>
-        </nav>
 
-         
-    </header>
-    <!-- main section -->
-    <main>
-       <!-- hero section --> 
-        <section class="mx-auto flex flex-col md:flex-row p-9 justify-between">
-    <!-- left section -->
-    <div class="md:w-1/2 border-green-600 border-2 p-4">
-        <h1 class="text-xl text-center md:text-left md:text-6xl font-bold">Personalized <span class="text-[#33b32c]">Software Solutions</span> For Your Business Growth</h1>
-      <br>
-        <p class="text-gray-6 text-xl md:text-base">We work as your tech partner so that you can scale up your business the fastest way.</p> <br>
-        <a class="btn bg-[#43b97f] rounded-full text-white">Hire Developer</a>
-    </div>
+      <!-- Stat Card 2 -->
+      <div class="bg-gray-50 rounded-xl p-8 text-center shadow-sm border border-gray-100">
+        <p class="counter text-5xl font-bold text-[#35B682]" data-target="120" data-suffix="+">0+</p>
+        <p class="mt-2 text-base text-gray-600 font-medium">Projects Completed <br> Successfully</p>
+      </div>
 
-    <!-- right section -->
-    <div class="md:w-1/2 border-red-600 border-2">
-        <img src="./assets/hero-img.svg" alt="hero-img" class="w-[600px]">
+      <!-- Stat Card 3 -->
+      <div class="bg-gray-50 rounded-xl p-8 text-center shadow-sm border border-gray-100">
+        <p class="counter text-5xl font-bold text-[#F1536E]" data-target="50" data-suffix="+">0+</p>
+        <p class="mt-2 text-base text-gray-600 font-medium">Satisfied Clients</p>
+      </div>
+
+      <!-- Stat Card 4 -->
+      <div class="bg-gray-50 rounded-xl p-8 text-center shadow-sm border border-gray-100">
+        <p class="counter text-5xl font-bold text-[#8A60F5]" data-target="45" data-suffix="+">0+</p>
+        <p class="mt-2 text-base text-gray-600 font-medium">Skilled Experts</p>
+      </div>
+
     </div>
+  </div>
 </section>
+<!-- Our Journey Section End -->
+        </main>
+    </div>
 
-    </main>
+
+    <!-- js link -->
+     <script src="./script.js"></script>
 </body>
-
-
 </html>
